@@ -1,0 +1,81 @@
+.sbutton {
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #DADADA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.4s;
+    }
+    .sb{
+        color: #e84118;
+        float: right;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #DADADA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: 0.4s;
+        
+    }
+    .box{
+        padding-top: 8px;
+    }
+    .stext {
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        color: #555;
+        font-size: 15px;
+        transition: 0.4s;
+        line-height: 40px;
+        width: 0px;
+        }
+        .s{
+            border: none;
+            background: none;
+            outline: none;
+            float: left;
+            padding: 0;
+            color: #555;
+            font-size: 15px;
+            transition: 0.4s;
+            line-height: 40px;
+            width: 0px;
+        }
+        .sbox:hover > .stext {
+            width: 200px;
+            padding: 0 5px;
+            border-radius: 50px;
+            }
+            .sbox:hover > .sbutton {
+            background: #fff;
+            }
+            
+            .fa-search {
+            color: #001EFF;
+            }
+            .sbox{
+                margin-top: 10px;
+            }
+
+            .from{
+                margin-top: 10px;
+            }
+            .form:hover > .s {
+                width: 200px;
+                padding: 0 5px;
+                border-radius: 50px;
+                }
+                .form:hover > .sb {
+                background: #fff;
+                }
