@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { domain } from "../../constant";
 class HeaderUser extends Component{
-    
     render(){
         const user=this.props.user;
         console.log(user[0].avatar)
@@ -19,7 +18,7 @@ class HeaderUser extends Component{
             console.log(key)
             window.location= `/search${key}`
         }
-                const profile=()=>{
+        const profile=()=>{
             window.location='/profile';
         }
         return(<>

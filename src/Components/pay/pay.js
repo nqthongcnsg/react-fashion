@@ -113,7 +113,7 @@ function generateID(length){
 			setSuccess({...success, show: true, state: res.data.success, message:res.data.message });
 		})
 		for(let i=0;i<cart.length;i++){
-			var dataDetail={mahd:mahd,idProduct:cart[i].idProduct,soluong:cart[i].soluong,gia:cart[i].gia,size:cart[i].size}
+			var dataDetail={mahd:mahd,idProduct:cart[i].idProduct,soluong:cart[i].soluong,gia:cart[i].gia,size:cart[i].size,email:email}
 		
 			API.addDetail(dataDetail).then((res)=>{
 				setSuccess({...success, show: true, state: res.data.success, message:res.data.message });
@@ -135,7 +135,7 @@ function generateID(length){
 
 			}
 		if(success){
-			alert("Lập hóa dơn thành công");
+			alert("Lập hóa dơn thành công, chúng tôi đã gửi thông tin đơn hàng qua mail, xin cảm ơn");
 			API.deleteCartPig(emailcart).then((res)=>{
 				setSuccess({...success, show: true, state: res.data.success, message:res.data.message });
 			})
@@ -221,7 +221,7 @@ function generateID(length){
 			}
 		}
 		if(success){
-			alert("Lập hóa dơn thành công");
+			alert("Lập hóa dơn thành công, chúng tôi đã gửi thông tin đơn hàng qua mail, xin cảm ơn");
 			API.deleteCartPig(emailcart).then((res)=>{
 				setSuccess({...success, show: true, state: res.data.success, message:res.data.message });
 			})

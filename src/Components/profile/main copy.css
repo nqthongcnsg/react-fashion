@@ -274,7 +274,7 @@ div .myAccount__icon{
 .product__list-item{
     margin-top: 28px;
     overflow-y: auto;
-    height: 200px;
+    height: auto;
 }
 .product__item{
     display: flex;

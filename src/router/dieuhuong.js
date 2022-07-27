@@ -16,6 +16,7 @@ import Profile from "../Components/profile/profile";
 import Momo from "../Components/momo/momo";
 import Contact from "../Components/contact/contact";
 import Search from "../Components/search/search";
+import Refesh from "../Components/login/refesh";
 
 class DieuHuong extends Component{
     render(){
@@ -27,6 +28,7 @@ class DieuHuong extends Component{
                         <Route path='/all' element={<AllProduct/>} /> 
                         <Route path='/checkout' element={<CheckOut/>}/> 
                         <Route path="/login" element=  {<Login/>} />   
+                        <Route path="/refesh" element=  {<Refesh/>} />  
                         <Route path="/register" element=  {<Register/>} /> 
                         <Route path="/chat" element=  {<Chat />} /> 
                         <Route path="/edit:id" element={<Edit/>} />
